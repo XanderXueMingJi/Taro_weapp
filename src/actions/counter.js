@@ -3,9 +3,10 @@ import {
   MINUS
 } from '../constants/counter'
 
-export const add = () => {
+export const add = (num = 1) => {
   return {
-    type: ADD
+    type: ADD,
+    num,
   }
 }
 export const minus = () => {
